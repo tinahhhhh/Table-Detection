@@ -1,0 +1,3 @@
+[submodule "Swin-Transformer-Object-Detection"]
+	path = Swin-Transformer-Object-Detection
+	url = https://github.com/SwinTransformer/Swin-Transformer-Object-Detection.git
