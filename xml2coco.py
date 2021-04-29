@@ -100,7 +100,7 @@ if __name__ == "__main__":
 
     print("Number of xml files (train): {}".format(len(xml_files)))
     # Generate Coco format annotations
-    convert(xml_files, "./training.json", data_path)
+    convert(xml_files, "./train.json", data_path)
 
     xml_files = []
     for i in range(420, 540):
@@ -111,7 +111,7 @@ if __name__ == "__main__":
     convert(xml_files, "./val.json", data_path)
 
     xml_files = []
-    for i in range(540, 609):
+    for i in range(540, 600):
         xml_files = xml_files + glob.glob(os.path.join(data_path, "cTDaR_t"+str(10000+i)+".xml"))
 
     print("Number of xml files (test): {}".format(len(xml_files)))
